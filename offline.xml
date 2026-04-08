@@ -1,0 +1,34 @@
+<items>
+
+<item>
+<title>[COLOR red]⚠ ADDON TEMPORALMENTE FUERA DE SERVICIO[/COLOR]</title>
+<link>NA</link>
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]El servidor no está respondiendo en este momento[/COLOR]</title>
+<link>NA</link>
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]⏳ Espera unos minutos antes de intentar nuevamente[/COLOR]</title>
+<link>NA</link>
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR gray]Esto puede ser por mantenimiento o saturación[/COLOR]</title>
+<link>NA</link>
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR lightblue]🔄 Presiona aquí para volver a cargar[/COLOR]</title>
+<link>NA</link>
+<externallink>https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/tu_archivo.xml</externallink>
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+
+</items>
