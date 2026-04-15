@@ -1,33 +1,33 @@
 <items>
 
 <item>
-<title>[COLOR red]⚠ ADDON TEMPORALMENTE FUERA DE SERVICIO[/COLOR]</title>
+<title>[COLOR lightred][B]ADDON TEMPORALMENTE FUERA DE SERVICIO[/B][/COLOR]</title>
 <link>NA</link>
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
 <item>
-<title>[COLOR yellow]El servidor no está respondiendo en este momento[/COLOR]</title>
+<title>[COLOR lightyellow]El servidor no está respondiendo en este momento[/COLOR]</title>
 <link>NA</link>
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
 <item>
-<title>[COLOR orange]⏳ Espera unos minutos antes de intentar nuevamente[/COLOR]</title>
+<title>[COLOR orange] Espera unos minutos antes de intentar nuevamente[/COLOR]</title>
 <link>NA</link>
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
 <item>
-<title>[COLOR gray]Esto puede ser por mantenimiento o saturación[/COLOR]</title>
+<title>[COLOR gray]Esto es debido a la Saturacion del Server[/COLOR]</title>
 <link>NA</link>
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
 <item>
-<title>[COLOR lightblue]🔄 Presiona aquí para volver a cargar[/COLOR]</title>
+<title>[COLOR lightblue]Presiona aquí para volver a cargar[/COLOR]</title>
 <link>NA</link>
-<externallink>https://addonbg.co/list.php?getcode=file.xml</externallink>
+<externallink>https://addonbg.co/list.php</externallink>
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
