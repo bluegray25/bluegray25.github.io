@@ -31,4 +31,76 @@
 <thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
 </item>
 
+  <item>
+<title>[COLOR lightblue]Presiona aquí para volver a cargar[/COLOR]</title>
+<link>NA</link>
+
+<externallink>$doregex[checkserver]</externallink>
+
+<regex>
+<name>checkserver</name>
+<expres><![CDATA[
+#$pyFunction
+import requests, xbmc, time, os
+from kodi_six import xbmcvfs
+
+def GetLSProData(page_data, Cookie_Jar, m):
+
+    url = "http://addonbg.co/list.php"
+
+    # Ruta para cache anti-spam
+    path = xbmcvfs.translatePath('special://profile/addon_data/plugin.video.blackghost/')
+    cache_file = path + "server_check.txt"
+
+    # Tiempo mínimo entre intentos (segundos)
+    cooldown = 10
+
+    # Leer último intento
+    try:
+        if os.path.exists(cache_file):
+            with open(cache_file, 'r') as f:
+                last_time = float(f.read().strip())
+        else:
+            last_time = 0
+    except:
+        last_time = 0
+
+    now = time.time()
+
+    # Si intenta muy rápido
+    if now - last_time < cooldown:
+        xbmc.executebuiltin("Notification([COLOR orange][B]Espera unos segundos[/B][/COLOR], Evita múltiples intentos, 2000)")
+        return ""
+
+    # Guardar tiempo actual
+    try:
+        with open(cache_file, 'w') as f:
+            f.write(str(now))
+    except:
+        pass
+
+    # Intentar conexión
+    try:
+        r = requests.get(url, timeout=5)
+
+        # Si ya responde bien
+        if r.status_code == 200:
+            xbmc.executebuiltin("Notification([COLOR lightgreen][B]Servidor disponible[/B][/COLOR], Accediendo..., 2000)")
+            return url
+
+        # Si sigue en 503 u otro error
+        else:
+            xbmc.executebuiltin(f"Notification([COLOR red][B]Servidor aún caído[/B][/COLOR], Código: {r.status_code}, 3000)")
+            return ""
+
+    except:
+        xbmc.executebuiltin("Notification([COLOR red][B]Error de conexión[/B][/COLOR], Intenta más tarde, 3000)")
+        return ""
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://addonbg.co/black/img/logo.png</thumbnail>
+</item>
+  
 </items>
